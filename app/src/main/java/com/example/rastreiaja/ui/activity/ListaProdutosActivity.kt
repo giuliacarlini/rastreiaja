@@ -6,14 +6,14 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rastreiaja.R
-import com.example.rastreiaja.dao.ProdutoDAO
+import com.example.rastreiaja.dao.RastreioDAO
 import com.example.rastreiaja.ui.recyclerview.adapter.ListaProdutosAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListaProdutosActivity : AppCompatActivity(R.layout.activity_lista_produtos) {
 
-    private val dao = ProdutoDAO()
-    private val adapter = ListaProdutosAdapter(context = this, produtos = dao.buscarTodos());
+    private val dao = RastreioDAO()
+    private val adapter = ListaProdutosAdapter(context = this, rastreios = dao.buscarTodos());
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {

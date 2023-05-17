@@ -12,7 +12,7 @@
         tools:context=".ui.activity.FormularioProdutoActivity">
 
         <EditText
-            android:id="@+id/produto_item_nome"
+            android:id="@+id/form_item_descricao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Nome"
@@ -21,32 +21,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Giulia Carlini"/>
+            tools:hint="Descrição"
+            tools:text="Shein"/>
 
         <EditText
-            android:id="@+id/produto_item_descricao"
+            android:id="@+id/form_item_codigo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="Descrição"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
-            app:layout_constraintStart_toStartOf="@id/produto_item_nome"
-            app:layout_constraintTop_toBottomOf="@id/produto_item_nome"
-            tools:text="Descrição"/>
-
-        <EditText
-            android:id="@+id/produto_item_valor"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Valor"
-            android:inputType="numberDecimal"
-            app:layout_constraintEnd_toEndOf="@id/produto_item_descricao"
-            app:layout_constraintStart_toStartOf="@id/produto_item_descricao"
-            app:layout_constraintTop_toBottomOf="@id/produto_item_descricao"
-            tools:text="19,99"/>
+            app:layout_constraintEnd_toEndOf="@id/form_item_descricao"
+            app:layout_constraintStart_toStartOf="@id/form_item_descricao"
+            app:layout_constraintTop_toBottomOf="@id/form_item_descricao"
+            tools:hint="Código de Rastreio"
+            tools:text="NB213070544BR"/>
 
         <Button
-            android:id="@+id/salvar"
+            android:id="@+id/form_button_salvar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -56,7 +47,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/produto_item_valor" />
+            app:layout_constraintTop_toBottomOf="@id/form_item_descricao" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
