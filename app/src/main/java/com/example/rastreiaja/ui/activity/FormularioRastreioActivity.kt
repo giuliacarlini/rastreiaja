@@ -1,5 +1,6 @@
 package com.example.rastreiaja.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,8 +10,9 @@ import android.widget.EditText
 import com.example.rastreiaja.R
 import com.example.rastreiaja.dao.RastreioDAO
 import com.example.rastreiaja.model.Rastreio
+import com.google.android.material.card.MaterialCardView
 
-class FormularioProdutoActivity : AppCompatActivity(R.layout.activity_formulario_produto) {
+class FormularioProdutoActivity : AppCompatActivity(R.layout.activity_formulario_rastreio) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -36,6 +38,5 @@ class FormularioProdutoActivity : AppCompatActivity(R.layout.activity_formulario
 
             finish();
         })
-
     }
 }
